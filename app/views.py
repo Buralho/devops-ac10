@@ -62,6 +62,7 @@ def cadastro_cursos(request):
             'year':datetime.now().year,
         })
     )
+
 def cadastro_vestibulares(request): assert isinstance(request, HttpRequest) return render(
 request,
 'app/cadastro_vestibulares.html’, context_instance = RequestContext(request, {
